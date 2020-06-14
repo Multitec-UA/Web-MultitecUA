@@ -18,7 +18,7 @@ add_action( 'genesis_meta', 'digital_front_page_genesis_meta' );
  */
 function digital_front_page_genesis_meta() {
 
-	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) ) {
+	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' )) {
 
 		// Enqueue scripts.
 		add_action( 'wp_enqueue_scripts', 'digital_enqueue_digital_script' );
@@ -128,6 +128,11 @@ function digital_front_page_widgets() {
 
 	genesis_widget_area( 'front-page-3', array(
 		'before' => '<div id="front-page-3" class="front-page-3"><div class="wrap"><div class="flexible-widgets widget-area fadeup-effect' . digital_widget_area_class( 'front-page-3' ) . '">',
+		'after'  => '</div></div></div>',
+	) );
+
+		genesis_widget_area( 'front-page-4', array(
+		'before' => '<div id="front-page-4" class="front-page-4"><div class="wrap"><div class="flexible-widgets widget-area fadeup-effect' . digital_halves_widget_area_class( 'front-page-4' ) . '">',
 		'after'  => '</div></div></div>',
 	) );
 

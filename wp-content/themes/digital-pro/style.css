@@ -1365,7 +1365,6 @@ a[rel~="attachment"]:hover,
 }
 
 .header-image .site-title > a {
-	background-position: center center !important;
 	background-size: contain !important;
 	float: left;
 	min-height: 70px;
@@ -2287,4 +2286,24 @@ p.form-submit,
 		width: 100%;
 	}
 
+}
+
+#front-page-1{
+	max-height: 635px !important;
+	margin-top: 0 !important;
+}
+
+#front-page-1 > div.backstretch > img{
+	filter: blur(5px);
+}
+
+#custom_html-2 > div > div > img {
+	filter: drop-shadow(-5px 0px 10px rgba(255,255,255,0.6));
+	margin-top: 95px;
+}
+
+.header-image .site-header{
+	background-color: rgba(33, 33, 33, 0.9) !important;
+	border: 0px !important;	
+	padding-bottom: 15px;
 }

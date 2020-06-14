@@ -304,3 +304,8 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 3', 'digital-pro' ),
 	'description' => __( 'This is the 3rd section on the front page.', 'digital-pro' ),
 ) );
+genesis_register_sidebar( array(
+	'id'          => 'front-page-4',
+	'name'        => __( 'Front Page 4', 'digital-pro' ),
+	'description' => __( 'This is the 4nd section on the front page.', 'digital-pro' ),
+) );
